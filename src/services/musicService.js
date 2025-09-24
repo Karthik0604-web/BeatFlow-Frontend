@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Prefer env in Docker/Nginx, default to local dev if not provided
-const API_BASE_URL = (import.meta?.env?.VITE_BACKEND_URL) || '/api';
+const API_BASE_URL = '/api';
 
 // Single axios instance
 const api = axios.create({
